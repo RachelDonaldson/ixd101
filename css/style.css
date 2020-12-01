@@ -1,0 +1,212 @@
+/*--- GLOBAL STYLING ---*/
+body{
+  font-family: 'Comfortaa', cursive;
+  font-style: normal;
+  color: #333;
+}
+
+section, header{
+  width: 80%;
+  max-width: 800px;
+  margin: auto
+}
+
+header{
+  max-width: 1000px;
+  color: #333
+}
+
+.background-colour {
+  padding: 4em 0;
+  background-image: linear-gradient(to right, #F8E5DC , #FFFEFC);
+}
+
+/*--- TYPOGRAPHY ---*/
+
+h1, h2 {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
+}
+
+.follow {
+  margin-bottom:
+}
+/*---- TYPOGRAPHIC HIERARCHY ----*/
+
+h1 {font-size: 4em; margin-bottom: 0.3}
+h2 {font-size: 2.75em; margin: 1em 0; color: #439ff6}
+
+P {font-size:1.25em;
+  line-height: 1.5;
+  margin bottom: 1em;
+  font-weight: 200;
+}
+
+header{
+
+}
+header h1 {
+  margin: 1em 0;
+  font-size: 2.25em;
+  line-height: 1.2;
+}
+
+/*--- BACKGROUND ---*/
+.background-colour {
+  padding:inherit;
+  background:
+  color:
+}
+
+/*--- LINKS ---*/
+
+a {
+  color: #439ff6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #103254;
+  border-bottom: 1px dotted;
+}
+
+.background-colour a:hover {
+  color: #fafafa
+}
+
+/*--- NAVIGATION ---*/
+
+nav {
+  top: 0;
+  left: 0;
+  margin: 0%;
+  width: 90%;
+  background-color:#fafafa
+  padding: 1em 0;
+  font-size: 0.85em;
+}
+
+nav ul{
+  padding-right: 15vw;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 20px;
+  background: none
+}
+
+nav a:link{
+  color:
+}
+
+nav a:visited {
+  color:
+}
+
+nav a:hover {
+  border-bottom: none;
+  color:inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  font-align: left;
+  text-transform: none;
+  padding-right: 30vw;
+}
+
+/*--- IMAGES ---*/
+
+img{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+/*--- PORTFOLIO SECTION ---*/
+
+.portfolio {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 0;
+  display: grid;
+  grid-gap: 10px;
+
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.porfilio h1{
+  text-align: center;
+}
+
+.portfolio-img{
+  width:
+  object-fit:
+}
+.portfolio-title {
+  position: absolute;
+  buttom:
+  width:
+  padding:
+  font-size:
+  font-weight: bold;
+  background:
+}
+
+/*--- FOOTER ---*/
+
+footer {
+  text-align: center;
+  font-size: 0.707
+  padding: inherit;
+  margin:auto;
+  color: #fafafa;
+  background: #439ff6
+}
+
+.connections {
+  position: relative;
+  margin: 0;
+}
+
+.connections ul {
+  margin: 0;
+  padding: 0;
+}
+
+.connections li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.connections a:link{
+  border-bottom: none
+}
+
+.connections img,
+.connections svg {
+  border: none
+}
+
+.connections a:hover svg path {
+  fill: #103254;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+
+  section, header {
+    width: 90%;
+    margin: auto;
+  }
+
+  header h1 {font-size: 3.25em}
+}
