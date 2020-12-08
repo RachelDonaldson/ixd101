@@ -34,49 +34,57 @@ header {
   font-family: 'Comfortaa', cursive;
   max-width: 900px;
   margin: auto;
-  padding: 10em 0 3em;
+  padding: 15em 0 3em;
   color: #3c3c3b;}
 
   header h1 {
-  margin: auto;
-  font-size: 4.25em;
+  margin: 0 0 3;
+  font-size: 6.25em;
   font-weight: semi-bold;
-  line-height: -3em;
   color: #ac1065;
   }
 
   header h2 {
-  font-family: 'Comfortaa', cursive;
-  font-size: 2.75em;
-  line-height: 1.5;
-  padding-bottom: 1em;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3em;
+    letter-spacing: 3px;
+    margin: 0 7em;
+    line-height: 0.2;
+    padding: 0em;
 }
 
  header h3 {
    font-family: 'Comfortaa', cursive;
-   font-size: 2em;
-   margin: auto;
-   line-height: 0.5em;
+   font-size: 3em;
+   letter-spacing: 3px;
+   margin: 0.2em;
+   line-height: 0.2;
    padding-bottom: 0em;
  }
 
- .indent h3 {
-   text-indent: 10em;
-   color: #fff
+ .indent {
+   text-indent:1em;
  }
+
 .highlight {color: #439ff6}
 
 /*--- BACKGROUND ---*/
 
 .background-image {
     padding: 3em 0;
-    background: #3c3c3b url('../img/manifesto.jpg') no-repeat;
-    color: #fafafa;}
+    background: #3c3c3b url('../img/manifesto-02.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+}
+
 
   .background-colour {
         padding: 3em 0;
-        background: ##ac1065
+        background: #ac1065
         color: #fafafa;}
+
 /*--- LINKS ---*/
 
 a {
@@ -148,7 +156,7 @@ nav a:hover {
   transition: all 0.3s ease-in-out; }
 
 .logo {
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
   text-align: left;
   padding-right: 30vw;
@@ -254,33 +262,39 @@ footer .connections a:hover svg path {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 710px) {
   section {
     width: 90%;
     margin: auto;}
 
 header {
       width: 90%;
-      margin-left: .5em;
+      margin-left: 3em;
+      padding: 7em 0 3em
       }
 
 header h1 {font-size: 3.25em;}
+header h3 {font-size: 1.5em;}
 header p {font-size: 1.25em;}
 
-/* .portfolio {grid-template-columns: repeat(2, minmax(150px, 1fr)); }*/
-
+.background-image {
+  height: 300px;
 }
 
-nav{
-  padding : 0.5em;
+nav {
+  padding: 0.5em;
 }
 
-.logo{
+.logo {
   text-align: center;
-  padding:
+  padding-right: 0;
 }
+
+
 nav ul li {
   display: block;
-  margin:auto;
-  background: none;
+  margin: 10px;
+  background: none;}
 }
+
+/* .portfolio {grid-template-columns: repeat(2, minmax(150px, 1fr)); }*/
