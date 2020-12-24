@@ -1,6 +1,6 @@
 /*--- GLOBAL STYLING ---*/
 body {
-  font-family: 'Comfortaa', cursive;
+  font-family:'Poppins', sans-serif;
   font-style: normal;
   color: #333;
 }
@@ -20,8 +20,8 @@ h1, h2, h3 {
 
 /*--- TYPOGRAPHIC HIERARCHY ---*/
 
-h1 {font-size: 4em; margin-bottom: .3em; color: #ac1065}
-h2 {font-size: 2.75em; margin: 1em 0; color: #3c3c3b}
+h1 {font-size: 4em; margin-bottom: .3em; color:#ac1065}
+h2 {font-size: 2.75em; margin: 1em 0; color: #ac1065}
 h3 {font-size: 1.90em; margin: 3em 0 1em 0}
 
 p {font-size: 1.25em;
@@ -34,32 +34,35 @@ header {
   font-family: 'Comfortaa', cursive;
   max-width: 900px;
   margin: auto;
-  padding: 15em 0 3em;
+  padding: 20em 0 3em;
   color: #3c3c3b;}
 
   header h1 {
   margin: 0 0 3;
-  font-size: 6.25em;
+  font-size: 5.5em;
+  font-family: 'Comfortaa', cursive;
   font-weight: semi-bold;
   color: #ac1065;
   }
 
   header h2 {
     font-family: 'Comfortaa', cursive;
-    font-size: 3em;
+    font-size: 2.75em;
     letter-spacing: 3px;
-    margin: 0 7em;
+    margin: auto;
     line-height: 0.2;
     padding: 0em;
+    color: #3c3c3b;
 }
 
  header h3 {
    font-family: 'Comfortaa', cursive;
-   font-size: 3em;
+   font-size: 2.75em;
    letter-spacing: 3px;
    margin: 0.2em;
    line-height: 0.2;
    padding-bottom: 0em;
+   color: #3c3c3b;
  }
 
  .indent {
@@ -72,11 +75,12 @@ header {
 
 .background-image {
     padding: 3em 0;
-    background: #3c3c3b url('../img/manifesto-02.jpg');
+    background: #3c3c3b url('../img/hero-img-3.jpg');
     background-repeat: no-repeat;
     width: 100%;
     height: 700px;
     background-size: cover;
+    background-position: center;
 }
 
 
@@ -114,7 +118,7 @@ a:hover {
   border-bottom: 1px dotted;}
 
 .portfolio a {
-  color: #103254;
+  color: #ac1065;
   border-bottom: none;}
 
 .portfolio a:hover {
@@ -123,13 +127,17 @@ a:hover {
 /*--- NAVIGATION ---*/
 
 nav {
-  top: 0;
+  top:0;
   left: 0;
-  margin: 0;
-  width: 90%;
-  background-color:#fafafa
-  padding: 1em 0;
+  margin: auto;
+  width: 100%;
+  background-color:#fafafa;
+  padding: 2em 0 2em 0;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.85em;
+  box-shadow: 0em 0em 1.5em 0.3em rgba(0,0,0,0.2);
+  position: fixed;
+  z-index: 99;
 }
 
 nav ul{
@@ -145,17 +153,18 @@ nav ul li {
   background: none;}
 
 nav a:link {
-  color: #3c3c3b;}
+  color: #ac1065}
 
 nav a:visited {
-  color: #3c3c3b;}
+  color: #ac1065}
 
 nav a:hover {
   border-bottom: none;
-  color: #103254;
+  color: #333;
   transition: all 0.3s ease-in-out; }
 
 .logo {
+  color: #ac1065;
   font-size: 1.5em;
   font-weight: bold;
   text-align: left;
@@ -172,17 +181,18 @@ img{
 
 /*--- PORTFOLIO SECTION ---*/
 
-.portfolio h2 { max-width: 960px; margin: 3em auto;}
+#portfolio h2 { max-width: 960px; margin: 3em 0 1em}
 .portfolio{
   max-width: 800px;
   margin: auto;
-  padding: 40px 0;
+  padding: 0;
   display: grid;
   grid-gap: 10px;
   /* grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px auto); */
 
-grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
+
 }
 
 .portfolio h1 {
@@ -198,10 +208,10 @@ li {
 }
 
 .portfolio-title {
-  font-family: proxima-nova, sans-serif;
+  font-family:'Poppins', sans-serif;
   position: absolute;
   bottom: 0;
-  width: 90%;
+  width: 100%;
   padding: 10px 0;
   font-size: 0.85em;
   font-weight: bold;
@@ -214,6 +224,17 @@ li {
   color: #fff
 }
 
+.follow h2 {max-width: 960px; margin: 3em 0 1em}
+
+.crazy{
+  align-items: center;
+  margin: 2em 0 5em;
+}
+
+.background-colour{background-color: #ac1065}
+
+#about h2 {color: #fafafa}
+#about p {color: #fafafa}
 /*---------------------------- FOOTER -----------------------------*/
 footer {
   text-align: center;
@@ -253,11 +274,11 @@ footer {
       margin: 2em auto;}
 
 .connections a:hover svg path {
-      fill: #333;
+      fill: #ac1065;
       transition: all 0.2s ease-in-out;}
 
 footer .connections a:hover svg path {
-        fill:  #103254;
+        fill:  #ac1065;
         transition: all 0.2s ease-in-out;}
 
 
@@ -270,15 +291,16 @@ footer .connections a:hover svg path {
 header {
       width: 90%;
       margin-left: 3em;
-      padding: 7em 0 3em
+      padding: 14em 0 3em
       }
 
 header h1 {font-size: 3.25em;}
+header h2 {font-size: 1.5em;}
 header h3 {font-size: 1.5em;}
 header p {font-size: 1.25em;}
 
 .background-image {
-  height: 300px;
+  height: 450px;
 }
 
 nav {
@@ -286,15 +308,16 @@ nav {
 }
 
 .logo {
-  text-align: center;
+  text-align: left;
   padding-right: 0;
 }
-
 
 nav ul li {
   display: block;
   margin: 10px;
-  background: none;}
+  background: none;
+  overflow: hidden;
+
 }
 
 /* .portfolio {grid-template-columns: repeat(2, minmax(150px, 1fr)); }*/
